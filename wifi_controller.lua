@@ -41,7 +41,7 @@ wifi.eventmon.register(wifi.eventmon.STA_CONNECTED,function(t)
 	-- auto update
 	au = tmr.create()
 	-- update weather data every 30 min
-	au:register(60000 * 30, tmr.ALARM_AUTO, function()
+	au:register(60000 * 5, tmr.ALARM_AUTO, function()
 		if (busy_flag == 0) then
 			print('AUTO UPDATING...')
 			wt.get()

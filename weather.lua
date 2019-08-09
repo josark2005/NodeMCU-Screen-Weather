@@ -8,6 +8,7 @@ link = "https://api.seniverse.com/v3/weather/daily.json?key="..weather_sk.."&loc
 
 function wt.get()
     print('Getting wearther...')
+	skrn.clearDisplay()
 	skrn.draw(3, 16, 24, "获取天气中")
     if (busy_flag == 0) then
 		wt.getWeather()
