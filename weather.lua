@@ -4,7 +4,7 @@ print "-- weather module has loaded"
 
 wt = {}
 
-link = "https://api.seniverse.com/v3/weather/daily.json?key="..weather_sk.."&location="..location.."&language=zh-Hans&unit=c&start=0&days=2"
+link = "http://api.seniverse.com/v3/weather/daily.json?key="..weather_sk.."&location="..location.."&language=zh-Hans&unit=c&start=0&days=2"
 
 function wt.get()
     print('Getting wearther...')
